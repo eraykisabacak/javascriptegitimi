@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Javascript Kursu</title>
+
+	<script type="text/javascript">
+		
+		//Try Throw - Hata blokları oluşturma
+
+		var a = 10;
+		var b = 10;
+
+		try{
+
+		if (a < b) {
+			throw "buyuk";
+		}
+		if(a==b){
+			throw "esit";
+		}
+		document.write(a+" ve "+b);
+
+		}catch(err){
+
+			if (err == "buyuk") {
+				document.write("a sayısı b den buyuk olamaz")
+			}
+			if (err == "esit") {
+				document.write("a sayısı b'ye eşit")
+			}
+
+
+		}
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

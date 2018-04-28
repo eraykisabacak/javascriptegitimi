@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Javascript Kursu</title>
+
+	<script type="text/javascript">
+		
+		/*
+
+		For İn Döngüsü
+
+		*/
+
+		var kurslar={kurs1:"PHP",kurs2:"Bootstrap"};
+
+		for(key in kurslar){
+
+			document.write(kurslar[key]+"<br>");
+		}
+
+		//Dizi Örneği
+
+		var egitimler = new Array("php","bootstrap","jquery");
+
+		for(key in egitimler){
+			document.write(egitimler[key]+"<br>");
+		}
+
+		/*
+
+		İç İçe Döngü
+
+		*/
+
+		var i , x;
+
+		for(x=1;x<=10;x++){
+			for(i=1;i<=10;i++){
+				document.write(i*x+" ");
+			}
+			document.write("<br>");
+		}
+
+		/*
+
+		break 
+
+		*/
+
+		var e = 10;
+
+		switch(e){
+			case 10:
+			document.write("Sayı 10");
+			break;
+			case 11:
+			document.write("Sayı 10");
+			break;
+		}
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

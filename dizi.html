@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Javascript Kursu</title>
+
+	<script type="text/javascript">
+		
+		//Diziler
+
+		 var kurslar;
+
+		 kurslar = new Array("PHP","Bootstrap 4 ","Jquery","Javascript",1,2,3,4,5);
+
+		 //Dizi elemanlarına Erişim
+
+		 //document.write(kurslar);
+
+		document.write(kurslar[0]+"<br>");
+		document.write(kurslar[1]+"<br>");
+		document.write(kurslar[2]+"<br>");
+		document.write(kurslar[3]+"<br>");
+		document.write(kurslar[4]+"<br>");
+		document.write(kurslar[5]+"<br>");
+		document.write(kurslar[6]+"<br>");
+		document.write(kurslar[7]+"<br>");
+		document.write(kurslar[8]+"<br>");
+
+		document.write("<br>");
+
+		//Proje Ödevi For Döngüsü kullaarak tüm elemanlarını tek seferde yazdırın.
+
+		for(var i = 0;i<9;i++){
+			document.write(kurslar[i]+"<br>");
+		}
+
+		document.write("<br><br>");
+
+		//Proje ödevi for in döngüsünü kullanarak tüm dizi elemanlarını tek seferde yazdırın
+
+		for(key in kurslar){
+			document.write(kurslar[key]+"<br>");
+		}
+
+
+		document.write("<br><br>");
+
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

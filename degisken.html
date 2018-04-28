@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Kursu Değişken</title>
+
+	<script type="text/javascript">
+		
+		/*
+		
+		Değişkenlere Giriş ve Yazım Kuralları
+
+		1-Değişken isimleri bir harf veya _ işareti ile başlayabilir
+		2-Küçük büyük harf duyarlılığı vardır.
+		3-255 Karakter uzunluğunda olabilr.
+		4-Türkçe karakter bulunamz. ş , ç , ö
+		5-Değişken ismi rakam ile başlamamalı
+
+		*/
+
+		
+
+		var _emrah = 10;
+		console.log(_emrah);
+
+		/*
+
+		Değişken Türleri
+		1-String
+		2-Number
+		3-Boolean true,false
+		4-Null Boş
+		5-Undefined Tanımlanmamış
+		*/
+
+		var e = "emrah";
+		var say = 10;
+		var sonuc = true;
+		var bos = null;
+		var emrah;
+
+
+
+		console.log(e+" Bu bir :"+typeof e);
+		console.log(say+" Bu bir :"+typeof say);
+		console.log(sonuc+" Bu bir :"+typeof sonuc);
+		console.log(bos+" Bu bir :"+typeof bos);	
+		console.log(emrah+" Bu bir :"+typeof emrah);
+		console.log(typeof php);
+
+
+
+		/*
+
+		Değişken Kapsamı
+
+		*/
+
+		var sayi1 = 100; // Genel Değişken
+
+		function topla(){
+
+			var sayi2 = 50; // Yerel Değişken
+
+			console.log(sayi1+sayi2); 
+		}
+
+		topla();
+
+		console.log(sayi1);
+		console.log(sayi2);
+
+	</script>
+
+</head>
+<body>
+
+</body>
+</html>

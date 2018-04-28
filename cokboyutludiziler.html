@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Javascript Kursu</title>
+
+	<script type="text/javascript">
+		
+
+		//Çok Boyutlu Diziler
+
+		var kurs = new Array("PHP","Bootstrap 4");
+		var kurslar = new Array(2);
+
+		for(var i = 0;i<2;i++){
+			kurslar[i] = new Array(2);
+		}
+
+		kurslar[0][0] = "Emrah Yüksel";
+		kurslar[0][1] = "23 Saat";
+		kurslar[0][2] = "Udemy";
+
+		kurslar[1][0] = "2-Emrah Yüksel";
+		kurslar[1][1] = "2-23 Saat";
+		kurslar[1][2] = "2-Udemy";
+
+		for(i = 0; i<2 ;i++){
+			for(var j =0;j<3;j++){
+				document.write(kurslar[i][j]+"<br>");
+			}
+		}
+
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Javascript Kursu</title>
+
+	<script type="text/javascript">
+		
+		//if Operatörü
+
+
+		var a = 10;
+		var b = 20;
+		if (a == b) {
+			console.log("Doğru");
+		}else if( a != b){
+			console.log("a ve b eşit değil");
+		}else{
+			console.log("Geçersiz");
+		}
+
+		/*
+
+		Ödev 1
+
+		İki değişken oluşturun kullanıcı adı ve şifreyi bu değişkenlere aktarın.Koşul ile bu değişkenlerin doğruluğunu sorguluyarak giriş başarılı ya da başarısız deyin
+
+		*/
+
+		var dbka = "kullanici";
+		var dbks = 111111;
+
+		var ka = "kullanici";
+		var ks = 111111;
+
+
+		if(dbka == ka){
+			console.log("Evet Kullanici Adi Doğru");
+			if(dbks == ks){
+				console.log("Evet Şifre Doğru");
+				console.log("Giriş Başarılı");
+			}
+			else{
+				console.log("Şifre Yanlış");
+				console.log("Giriş Başarısızz");
+			}
+		}
+		else{
+			console.log("Giriş Başarısız");
+		}
+
+		/*
+
+		2.Ödev
+
+		Tanımlanan 3 Sayının En Büyüğünü Bulun.
+
+	
+		*/
+
+		var sayi1 = 1;
+		var sayi2 = 5;
+		var sayi3 = 3;
+		var eb = sayi1;
+
+		if(sayi1 > sayi2 && sayi1 > sayi3){
+			console.log("En büyük : ",sayi1);
+		}else if(sayi2 > sayi1 && sayi2 > sayi3){
+			console.log("En büyük : ",sayi2)
+		}else if(sayi3 > sayi1 && sayi3 > sayi1){
+			console.log("En büyük : ",sayi3);
+		}else{
+			console.log("Geçersiz");
+		}
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Javascript Kursu</title>
+
+	<script type="text/javascript">
+		
+		//Dizi Fonksiyon
+
+		//toString - Diziler arasına virgül atar
+
+		// var kurslar = new Array("Php","Bootstrap 4","Jquery","Javascript");
+		 /*
+
+		 //document.write(kurslar.toString());
+		 //document.write(kurslar);
+
+		*/
+
+		 //join - Diziler Arasına bişey koyar
+
+		/*
+
+		 document.write(kurslar.join("-"));
+
+		 */
+
+		 //pop - Dizideki son elemanı kaldırır
+
+		 /*
+
+		 document.write(kurslar.pop()+"<br>");
+		 document.write(kurslar);
+
+		 */
+
+		 //push - Dizinin sonuna verileni ekler
+
+		 /*
+
+		 document.write(kurslar+"<br>");
+		 kurslar.push("Udemy");
+		 document.write(kurslar);
+
+		 */
+
+		 //shift - Dizinin ilk öğesini kaldırıyor ve sonraki öğeleri bir alt indise indiriyor
+
+		/*
+
+		 document.write(kurslar+"<br>");
+		 kurslar.shift();
+		 document.write(kurslar);
+
+		 */
+
+		 //unshift - Dizinin ilk indisine öğe ekleniyor
+
+		/*
+
+		 document.write(kurslar+"<br>");
+		 kurslar.unshift("Eklendi");
+		 document.write(kurslar);
+
+		 */
+
+		 //splice - Veri kaldırılabilir Veri eklenebilir (Kaçıncı indis,diğer indis,eklenecek,diğer eklenecek)
+
+		/*
+
+		 document.write(kurslar+"<br>");
+		 //kurslar.splice(2,2,"1","2");//Sonraki verileri kaldırır
+		 //kurslar.splice(2,0,"1","2");//Araya Ekler
+		 //kurslar.splice(2,1,"1","2");// 1 tane ekler 1 tane kaldırır
+		 kurslar.splice(2,2);//Sadece 2 tane gösterilir
+		 document.write(kurslar);
+
+		 */
+
+		 //delete - Eleman siler - Undined elemanı bir aşağı indise geçirmediği için yani 2 deki indisi 1'e geçirmez 1'deki elemanı siler bu yüzden SPLİCE fonksiyonu kullanmak daha doğrudur.
+
+		 /*
+
+		 document.write(kurslar+"<br>");
+		 delete kurslar[0];
+		 document.write(kurslar+"<br>");
+		 document.write(kurslar[0]+"<br>"); //undined 
+		 document.write(kurslar[1]+"<br>");
+
+		*/
+
+		//concat - Dizileri birleştirir
+
+		/*
+
+		var kurs1 = new Array("Php","Bootstrap 4");
+		var kurs2 = new Array("Jquery","Javascript");
+		var kurs3 = new Array("Java","C#")
+
+		document.write(kurs1+"<br>");
+		document.write(kurs2+"<br>");
+
+		var kurs = kurs1.concat(kurs2,kurs3);
+
+		document.write(kurs);
+
+		*/
+
+		//slice - 
+
+
+		
+
+		 var kurslar = new Array("Php","Bootstrap 4","Jquery","Javascript",1,2,3,4,5,6,4);
+
+		 /*
+
+		document.write(kurslar+"<br>");
+
+		ayir = kurslar.slice(1,5);
+
+		document.write(ayir+"<br>");
+
+		*/
+
+		//length - Dizinin Eleman sayısını verir
+
+		/*
+
+		document.write("Bu Dizinin Eleman sayısı : "+kurslar.length+"<br>");
+
+		for(var i = 0; i < kurslar.length;i++){
+			document.write(kurslar[i]+"<br>");
+		}
+
+		*/
+
+		//reverse - Diziyi tersine çevirir
+
+		/*
+
+		document.write(kurslar+"<br>");
+		kurslar.reverse();
+		document.write(kurslar);
+
+		*/
+
+		//sort - Dizinin elemanlarını sıralar
+
+		/*
+
+		document.write(kurslar+"<br>");
+		kurslar.sort();
+		document.write(kurslar); 
+
+		*/
+
+		//indexof - Yazılan değerin dizide nerede olduğunu yazar
+
+		/*
+
+		document.write(kurslar.indexOf("Jquery")+"<br>");
+
+		*/
+
+		//some - True False
+
+		var yas = new Array(10,5,8,9,15,11,30,40);
+
+		function yasKontrol(events){
+
+			return events >=18;
+
+		}
+
+		document.write(yas.some(yasKontrol));
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
