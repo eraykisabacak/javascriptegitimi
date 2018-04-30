@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Javascript Kursu</title>
+
+	<script type="text/javascript">
+		
+		/*
+
+		Fonksiyonlar 
+
+//-----				Return
+
+		*/
+
+		/*
+
+		function carp(a,b){
+
+			sonuc = a * b;
+
+			return sonuc;
+		}
+
+		document.write(carp(5,5));
+
+		*/
+
+		/*
+
+//-----				Fonksiyon Geçişleri
+
+		*/
+
+		/*
+		var islem1 = function(yap1){
+			
+			yap1(30+20);
+
+		}
+
+		var islem2 = function(yap2){
+
+			document.write(yap2);
+		
+		}
+
+		islem1(islem2);
+
+		*/
+
+//-----		// Recursive Fonksiyonlar
+
+		/* var i = 0;
+
+		function tekrarla(param){
+
+			if(i < param) {
+
+				i++
+				document.write(i+"<br>");
+				tekrarla(param);
+			}
+
+		}
+
+		tekrarla(5)
+
+		*/
+
+		/*
+
+		Proje Ödevi
+
+		Girilen Paramaetre değerine kadar olan sayıları toplayan recursive fonksiyonu yazınız
+
+		*/
+
+		/*
+
+		var i = 0,sonuc = 0;
+
+		function tekrarla(param){
+
+			if(i <= param){
+
+				sonuc += i;
+				i++;
+				
+				tekrarla(param);
+			}
+		}
+
+		
+		tekrarla(2);
+		document.write(sonuc+"<br>");
+
+		*/
+
+		/*
+
+		var i = 0 , sonuc = 0;
+
+		function toplam(sayi1){
+
+			if(i <= sayi1){
+				sonuc += i;
+				i++;
+				toplam(sayi1);
+
+			}
+		}
+
+		toplam(5);
+		document.write(sonuc+"<br>");
+
+		*/
+
+		/*
+
+		Hazır Fonksiyonlar
+
+		encodeURI
+		decodeURI
+		eval
+		isFinie
+		isNAN
+		number
+		parseFloat
+		parseInt
+		string
+
+
+		*/
+
+		//encodeURI	
+
+		/*
+
+		var url = "my test.html?ad=Eray&soyad=Kısabacakğü";
+
+		document.write(url+"<br>");
+
+		document.write(encodeURI(url)+"<br>"); //Şifrelenmiş Hali
+
+		document.write(decodeURI(url)); //Eski Hali
+
+		*/
+
+		//eval
+
+		/*
+
+		var a = 10;
+		var b = 20;
+
+		var c = eval("a+b"); //Stringleri Değişkenlere dönüştürür.
+
+		document.write(c);
+
+		*/
+
+		//isFinite
+		
+		/* Bir numaranın sonlu, yasal bir numara olup olamadığını kontrol edin:
+		Number.MAX_VALUE : Değişkenlerin maksimum alabileceği değer : 1.79E+308
+		Number.MİN_VALUE : Değişkenlerin minimum alabileceği eğer : 5e-324
+		Number.POSITIVE_INFINITY : Değişkenlerin maksimum sınırı aştığı zaman döner.
+		Number.NEGATIVE_INFINITY : Değişken minimum sınırı aştığı zaman döner.
+
+		*/
+		/*
+
+		var a = isFinite("2017/10/20");
+
+		document.write(a);
+
+		*/
+
+		//isNaN
+
+		/*
+
+		var a = "Eray";
+		var b = 6;
+
+		var c=a+b;
+
+		var d=isNaN(c);
+
+		if(isNaN(c)){
+
+			document.write(d+"Bu bir sayı değildir ");
+		}else{
+			document.write(d+"Bu bir sayıdır.");
+		}	
+
+		*/
+
+		//number --- String bir değeri sayıya dönüştürür
+
+/*
+
+		var e = "1234";
+		var d = "6653";
+
+		document.write(typeof e+"<br>");
+
+		document.write(typeof Number(e)+"<br>");
+
+
+		document.write(Number(e)+Number(d)+"<br>");
+
+		e = false;
+
+		document.write(e+"<br>");
+
+		e = new Date();
+
+		document.write(e+"<br>");
+		*/
+
+		//parseFloat
+		/*
+		var a = parseFloat("55 65 55 10 Yaşındayım 10 Yaşındayım");
+
+		document.write(a);
+		*/
+
+		//parseInt
+		/*
+
+		var e = parseInt("12345 emfkmsd");
+
+		document.writeln(parseInt("11",16)); // 11'in lik Sisteme göre
+		document.writeln(parseInt("11",10));
+		document.writeln(parseInt("11",19));
+		document.writeln(parseInt("11",8));
+		document.writeln(parseInt("11",2));
+		*/
+
+		//string
+
+		//var e = Boolean(1);
+		//var e = 1234;
+		var e = new Date();
+		document.write(typeof String(e)+"<br>");
+		document.write(String(e));
+
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
