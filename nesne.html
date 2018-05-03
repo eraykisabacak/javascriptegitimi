@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Javascript Kursu</title>
+
+	<script type="text/javascript">
+		
+		/*
+
+		Nesneler
+
+		*/
+
+		/*
+
+		var araba = {
+
+			marka:"ford",
+			renk:"gri",
+			yil:"2004",
+			km:"34500"
+		
+		}
+
+
+
+		console.log(araba);	
+
+		*/
+
+		//functionla nesne tanımlama
+
+		/*
+		function araba(marka,renk,yil,km){
+
+			this.markasi = marka;
+			this.rengi = renk;
+			this.yili = yil;
+			this.kmsi = km;
+
+		}
+
+		var araba1 = new araba("Kia","Kirmizi","2017","0");
+
+		var araba2 = new araba("Renault","Silver","2016","240000");
+
+		console.log(araba1);
+
+		console.log(araba2);
+
+		document.write(araba1.markasi+"<br>");
+		document.write(araba1.rengi+"<br>");
+		document.write(araba1.yili+"<br>");
+		document.write(araba1.kmsi+"<br>");
+
+		document.write("<hr>");
+
+		document.write(araba2.markasi+"<br>");
+		document.write(araba2.rengi+"<br>");
+		document.write(araba2.yili+"<br>");
+		document.write(araba2.kmsi+"<br>");
+
+		document.write("<hr>");
+
+		var emrah = new Object();
+
+		emrah.tc=123456789;
+		emrah.boy="190 cm";
+		emrah.yas="32";
+
+		console.log(emrah);
+
+		document.write(emrah.tc+"<br>");
+		document.write(emrah.boy+"<br>");
+		document.write(emrah.yas+"<br>");
+
+		*/
+
+		/*var araba = [
+
+		{
+
+			marka:"ford",
+			renk:"gri",
+			yil:"2004",
+			km:"34500"
+
+		},
+
+		{
+
+			marka:"hyundai",
+			renk:"red",
+			yil:"2004",
+			km:"10000"
+
+		},
+		{
+
+			marka:"kia",
+			renk:"green",
+			yil:"2004",
+			km:"3"
+
+		}
+
+		];
+
+		//console.log(araba);
+
+		console.log(araba[1].marka);
+*/
+		/*
+
+		for (arabalistele in araba){
+			console.log(araba[arabalistele]);
+		}
+
+		*/
+
+		// Nesnelere metod ekleme
+
+		/*
+
+		var Ogrenci = {
+
+			ad:"Eray",
+			soyad:"Kısabacak",
+			yas:20,
+			adsoyad:function(){
+
+				return this.ad+" "+this.soyad;
+
+			},
+			yasHesap:function(){
+
+				return (2018-this.yas);
+			}
+		}
+
+		document.write(Ogrenci.adsoyad()+"<br>");
+		document.write(Ogrenci.yasHesap()+"<br>");
+
+		*/
+
+		/*
+
+		Prototype Nesnelere Ekstra Yeni Öellik Ekleme
+
+		*/
+
+		function araba(marka,renk,model){
+
+			this.marka = marka;
+			this.renk = renk;
+			this.model = model;
+
+		}
+
+		araba.prototype.fiyat = 20000;
+
+		var araba1 = new araba("Ford","Kırmızı","1980");
+
+		console.log(araba1);
+
+
+
+
+
+
+
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
