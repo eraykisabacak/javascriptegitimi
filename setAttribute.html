@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Javascript Kursu</title>
+
+</head>
+<body>
+
+	<a id="udemy">Udemy Sitesine Git</a>
+
+	<button type="button" onclick="islem()">Ekle</button>
+
+	<button type="button" onclick="targetEkle()">Target Ekle</button>
+
+
+	<script type="text/javascript">
+		
+		/*
+			attributes,setAttribute,hasAttribute
+
+
+		*/
+
+		//setAttribute -- var olmayan özellik ekleyebilir
+
+		//attributes -- ekranda gösterir
+
+		//hasAttribute -- özellikler var mı diye kontrol edilir
+
+		function islem(){
+
+			document.getElementById("udemy").setAttribute("href","https://www.udemy.com")
+
+			
+
+		}
+
+		function targetEkle(){
+
+			var y = document.getElementById("udemy");
+			console.log(y);
+
+			//console.log(y.hasAttribute("target",true));
+
+			if (!(y.hasAttribute("target"))) {
+
+				y.setAttribute("target","_blank");
+			}
+
+		}
+
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Javascript Kursu</title>
+
+	<script type="text/javascript">
+		
+		/*
+	
+		String Nesnesi
+
+		*/
+
+		/*
+
+		var e = "Eray Kısabacak";
+
+		document.write(e.length);
+
+		*/
+
+		// indexOf()
+
+		/*
+
+		var e = "Eray Kısabacak kastamonu";
+
+		document.write(e.indexOf("kastamonu")+"<br>");
+		document.write(e.indexOf("Kısabacak")+"<br>");
+
+		*/
+
+		//lastIndexOf() Verilen kelimenin en son nerede yer aldğını gösterir
+
+		/*
+
+		var e = "Eray Kısabacak kastamonu gggffffgg java";
+
+		document.write(e.lastIndexOf("java")+"<br>");
+		document.write(e.lastIndexOf("Kısabacak")+"<br>");
+
+		*/
+
+		//search() - lastIndexOf Benzer
+
+		//substr() Bir yerden başlasın bir yere kadar gitsin fonksiyonudur
+
+		/*
+
+		var e = "Ben Eray Kısabacak kastamonu gggffffgg java";
+
+		document.write(e.substr(4,9));
+
+		*/
+
+		//replace() - Bir kelimeyi onun yerine değiştirir Sadece ilk olanı değiştiri
+
+		//   ---   /.../g yapılırsa bütün kelimeleri değiştirir
+
+		/*
+
+		var e = "Ben Eray Kısabacak java kastamonu gggffffgg java";
+
+		var a = "Ben Eray Kısabacak Java kastamonu gggffffgg java";
+
+		document.write(e.replace("java","javascript")+"<br>");
+
+		document.write(e.replace(/java/g,"javascripthepsi")+"<br>");
+
+		document.write(a.replace(/java/gi,"javascriptbuyukkucuk")+"<br>");
+
+		document.write(e);
+
+		*/
+
+		//toLowerCase
+
+		/*
+
+		var e = "UDEMY EGITIMENI EMRAH YUKSEL";
+
+		document.write(e.toLowerCase());
+
+		*/
+
+		//toUpperCase
+
+		/*
+
+		var e = "lorem lorem ufak yazı ne olacak";
+
+		document.write(e.toUpperCase());
+
+		*/
+
+		//concat
+
+		/*
+
+		var ad = "Eray";
+		var soyad = "Kısabacak";
+		var okul = "Selcuk University";
+
+		document.write(ad+" "+soyad);
+
+		document.write(ad.concat(" ",soyad)," ",okul);
+
+		*/
+
+		//split
+
+		var e = "UDEMY EGİTİMİ ERAY KISABACAK";
+
+		var dizi = e.split(" ");
+
+		document.write(dizi);
+
+		console.log(dizi);
+
+
+
+
+
+
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

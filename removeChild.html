@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Javascript Kursu</title>
+
+</head>
+<body>
+
+	<ul id="udemy">
+		<li>PHP</li>
+		<li>Bootstrap</li>
+		<li>Jquery</li>
+		<li>Javascript</li>
+	</ul>
+
+	<button onclick="islem()">Sil</button>
+
+	<script type="text/javascript">
+		
+		/*
+		removeChild -- Sayfadan eleman siler
+
+		*/
+
+		function islem(){
+
+			var list = document.getElementById("udemy");
+			console.log(list);
+			list.removeChild(list.childNodes[0]);
+
+		}
+
+
+
+
+	</script>
+
+</body>
+</html>
